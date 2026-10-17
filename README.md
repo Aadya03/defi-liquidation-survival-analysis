@@ -218,27 +218,32 @@ Verdict: **PARTIAL POSITIVE** — modest, statistically overwhelming type-persis
 ---
 
 ## Repository structure
+
+```
 defi_project/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── nb0_setup.ipynb Environment setup
-├── nb1_data.ipynb Data extraction and task registry
-├── nb2b_pinned_baseline.ipynb XGBoost+Cox baseline (chronological hold)
-├── nb3_fuzzy.ipynb IT2 fuzzy regime memberships
-├── nb4_augmented.ipynb Baseline + fuzzy marginal features (null)
-├── nb6_interactions.ipynb Fuzzy × base feature interactions (null)
-├── nb7_full_calib.ipynb Breslow + Brier + prediction intervals
-├── nb8_cluster_robust_cox.ipynb Cluster-robust Cox regression (POSITIVE)
-├── nb9_mva.ipynb PCA, FA, Hotelling’s T², LDA (PARTIAL)
-├── nb10_tsa.ipynb Hawkes, ADF, Granger (POSITIVE)
-├── nb11_game_theory.ipynb Bayesian signaling game (PARTIAL)
+├── LICENSE
+├── nb0_setup.ipynb                  Environment setup
+├── nb1_data.ipynb                   Data extraction and task registry
+├── nb2b_pinned_baseline.ipynb       XGBoost+Cox baseline (chronological hold)
+├── nb3_fuzzy.ipynb                  IT2 fuzzy regime memberships
+├── nb4_augmented.ipynb              Baseline + fuzzy marginal features (null)
+├── nb6_interactions.ipynb           Fuzzy × base feature interactions (null)
+├── nb7_full_calib.ipynb             Breslow + Brier + prediction intervals
+├── nb8_cluster_robust_cox.ipynb     Cluster-robust Cox regression (POSITIVE)
+├── nb9_mva.ipynb                    PCA, FA, Hotelling's T², LDA (PARTIAL)
+├── nb10_tsa.ipynb                   Hawkes, ADF, Granger (POSITIVE)
+├── nb11_game_theory.ipynb           Bayesian signaling game (PARTIAL)
 └── pre_registrations/
-├── pre_registrations_phase6.md
-└── pre_registrations_phase7.md
-(Pre-registrations for phases 8-11 are inline at the top of their notebooks)
+    ├── pre_registrations_phase6.md
+    └── pre_registrations_phase7.md
+```
 
-Historical note: nb2_baseline.ipynb (initial baseline with random holdout, superseded by nb2b), nb5_calibration.ipynb (preliminary calibration, superseded by nb7), and nb8b_true_ag.ipynb (attempted true Andersen-Gill, withdrawn after discovering the FinSurvival schema does not naturally support counting-process intervals; nb8's cluster-robust Cox is the methodologically correct analysis) are retained locally but not included here.
+Pre-registrations for phases 8–11 are inline at the top of their notebooks.
+
+Historical note: `nb2_baseline.ipynb` (initial baseline with random holdout, superseded by nb2b), `nb5_calibration.ipynb` (preliminary calibration, superseded by nb7), and `nb8b_true_ag.ipynb` (attempted true Andersen-Gill, withdrawn after discovering the FinSurvival schema does not naturally support counting-process intervals; nb8's cluster-robust Cox is the methodologically correct analysis) are retained locally but not included here.
 
 ---
 
